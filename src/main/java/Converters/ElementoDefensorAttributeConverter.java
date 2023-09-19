@@ -26,18 +26,5 @@ public class ElementoDefensorAttributeConverter implements AttributeConverter<El
         }
         return elementoDefensor1;
     }
-    private String toString(ElementoDefensor elementoDefensor){
-        String elementoDefensor1 = null;
-        if(elementoDefensor.getClass() == Arco.class){
-            elementoDefensor1 = "Arco";
-        }
-        if(elementoDefensor.getClass() == Espada.class){
-            elementoDefensor1 = "Espada";
-        }
-        if(elementoDefensor.getClass() == Escudo.class) {
-            elementoDefensor1 = "Escudo";
-        }
-        return elementoDefensor1;
-    }
 
 }
