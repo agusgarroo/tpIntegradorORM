@@ -6,6 +6,7 @@ import java.time.LocalDate;
 @Entity
 public class Jugador {
     @Id
+    @GeneratedValue
     private long id;
 
     @Column(name="Apellido")

@@ -6,7 +6,7 @@ import javax.persistence.AttributeConverter;
 public class ElementoDefensorAttributeConverter implements AttributeConverter<ElementoDefensor, String> {
     @Override
     public String convertToDatabaseColumn(ElementoDefensor elementoDefensor){
-            return this.toString(elementoDefensor);
+            return elementoDefensor.getClass().getSimpleName();
     }
     @Override
     public ElementoDefensor convertToEntityAttribute (String elementoDefensor){
